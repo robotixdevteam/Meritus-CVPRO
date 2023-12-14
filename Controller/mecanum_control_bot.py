@@ -17,8 +17,8 @@ Such as:
  v  - Move around a blend right\r
  e  - Rotation left\r
  r  - Rotation right\r
- f  - Rotation around the central point of one axie in left\r
- g  - Rotation around the central point of one axie in right\r
+ f  - Rotation around the central point of one axle in left\r
+ g  - Rotation around the central point of one axle in right\r
 esc - quit
 """
 
@@ -128,8 +128,8 @@ def usage():
     \tv    :   Move around a blend right\r
     \te    :   Rotation left\r
     \tr    :   Rotation right\r
-    \tf    :   Rotation around the central point of one axie in left\r
-    \tg    :   Rotation around the central point of one axie in right\r
+    \tf    :   Rotation around the central point of one axle in left\r
+    \tg    :   Rotation around the central point of one axle in right\r
     \tesc  :   Quit \r
     """
     return usage_str
@@ -243,10 +243,10 @@ def publish(client):
                     elif event.key == K_r: # Rotation right
                         msg = f"{360}, {-360}"
                     
-                    elif event.key == K_f: # Rotation around the central point of one axie in left
+                    elif event.key == K_f: # Rotation around the central point of one axle in left
                         msg = f"{-120}, {120}"
                     
-                    elif event.key == K_g: # Rotation around the central point of one axie in right
+                    elif event.key == K_g: # Rotation around the central point of one axle in right
                         msg = f"{120}, {-120}"
 
                     elif event.key == K_ESCAPE: # to quit the pygame
