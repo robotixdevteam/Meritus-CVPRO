@@ -5,7 +5,7 @@ pandas
 pillow
 notebook
 seaborn
-paho-mqtt~=1.6.1
+paho-mqtt
 matplotlib
 scikit-learn
 opencv-python~=4.5.4.60
