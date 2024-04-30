@@ -30,6 +30,10 @@ from pygame.locals import (
     KEYDOWN,
     KEYUP,
     QUIT,
+    K_UP,
+    K_DOWN,
+    K_LEFT,
+    K_RIGHT,
     K_w,
     K_a,
     K_s,
@@ -54,24 +58,25 @@ CLIENT_ID = "python-mqtt"
 USERNAME = "cvpro"
 PASSWORD = "cvpro"
 
-parser = argparse.ArgumentParser(description="Control the Bot.")
-parser.add_argument(
-    "-c", type=int, default=255, help="integer values to send to bot"
-)
-
-args = parser.parse_args()
-x = args.c
-
-if x > 255:
-    print("High speed! You should maintain a value under 255.")
-    # pygame.quit()
-    sys.exit()
-elif x < 200:
-    print("Low speed! You should maintain a value above 200.")
-    # pygame.quit()
-    sys.exit()
-else:
-    print("Your Speed limit 🏎️ --> ", x)
+def speed_input():
+    global x
+    user_input = input("Enter a valid Speed Limit (170-255):")
+    
+    if not user_input:
+        print("No input provided. Please enter a valid speed limit.")
+        speed_input()
+        return
+    
+    x = int(user_input)
+ 
+    if x > 255:
+        print("High speed! You should maintain a value under 255! Default is 220.")
+        speed_input()
+    elif x < 200:
+        print("Low speed! You should maintain a value above 200! Default is 220.")
+        speed_input()
+    else:
+        print("Your Speed limit 🏎️ --> ", x)
 
 # Instructions
 def caution():
@@ -172,6 +177,7 @@ def connect_mqtt():
         else:
             print("Failed to connect, return code %d\n", return_code)
     client = mqtt_client.Client(CLIENT_ID)
+    #client = mqtt_client.Client(mqtt_client.CallbackAPIVersion.VERSION1, CLIENT_ID)
     client.username_pw_set(USERNAME, PASSWORD)
     client.on_connect = on_connect
     try:
@@ -199,17 +205,20 @@ def publish(client):
         while running:
             for event in pygame.event.get():
                 if event.type == KEYDOWN: # control the keys
-                    if event.key == K_w: # moving forward
+                    if event.key in (K_UP, K_w): # moving forward
                         msg = f"{x}, {x}"
 
-                    elif event.key == K_s: # moving backward
+                    elif event.key in (K_DOWN, K_s): # moving backward
                         msg = f"{-x}, {-x}"
 
-                    elif event.key == K_a:  # moving left
-                        if pygame.key.get_pressed()[K_w]:
+                    elif event.key in (K_LEFT, K_a):  # moving left
+                        # Check if the UP key or W key is pressed for diagonal movement
+                        if pygame.key.get_pressed()[K_UP] or pygame.key.get_pressed()[K_w]:
                             msg = f"{-int(x * 0.75)}, {x}"
-                    elif event.key == K_d: # moving right
-                        if pygame.key.get_pressed()[K_w]:
+
+                    elif event.key in (K_RIGHT, K_d): # moving right
+                        # Check if the UP key or W key is pressed for diagonal movement
+                        if pygame.key.get_pressed()[K_UP] or pygame.key.get_pressed()[K_w]:
                             msg = f"{x}, {-int(x * 0.75)}"
 
                     elif event.key == K_SPACE: # Data collection
@@ -289,6 +298,18 @@ def publish(client):
                             msg = f"{0}, {0}"
                     elif event.key == K_s:
                         msg = f"{0}, {0}"
+
+                    elif event.key == K_UP:
+                        msg = f"{0}, {0}"
+                    elif event.key in [K_LEFT, K_RIGHT]:
+                        if pygame.key.get_pressed()[K_UP]:
+                            msg = f"{x}, {x}"
+                        elif pygame.key.get_pressed()[K_DOWN]:
+                            msg = f"{-x}, {-x}"
+                        else:
+                            msg = f"{0}, {0}"
+                    elif event.key == K_DOWN:
+                        msg = f"{0}, {0}"    
                     # print(msg)
                     if msg is not None:
                         print("Message published in KeyUP ",msg)
@@ -321,6 +342,7 @@ def run():
 
 # Main
 if __name__ == "__main__":
+    speed_input()
     caution()
     pygame.init()
     screen.setup_screen()
