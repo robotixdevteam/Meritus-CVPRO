@@ -3,6 +3,7 @@ numpy
 pygame~=2.4.0
 pandas
 pillow
+notebook
 seaborn
 paho-mqtt
 matplotlib
