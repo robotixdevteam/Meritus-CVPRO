@@ -48,15 +48,15 @@ if /i "%userInput%"=="build" (
         echo [38;5;74mFor Data Collection Process:[0m
         echo ----------------------------
         echo.
-        echo 1. Please Disconnect the Internet, and connect the Bot with the System. Ensure the Connected IPv4 Address is: 192.168.4.2
-        echo 2. Type 'launch_server' to Launch the MQTT Server to run the Bot!
-        echo 3. Type 'run_cvpro' to begin the Data Collection Process!
+        echo 1. Please Disconnect the Internet, and connect the Bot with the System. Ensure the Connected IPv4 Address is: [38;5;74m192.168.4.2[0m
+        echo 2. Type '[38;5;74mlaunch_server[0m' to Launch the MQTT Server to run the Bot!
+        echo 3. Type '[38;5;74mrun_cvpro[0m' to begin the Data Collection Process!
         echo.  
         echo [38;5;74mFor Training Process:[0m
         echo ---------------------
         echo.
         echo 1. Ensure your Bot is disconnected from the System as well as the Application.
-        echo 2. Type 'train_cvpro' to begin the Training Process!
+        echo 2. Type '[38;5;74mtrain_cvpro[0m' to begin the Training Process!
         echo.
 
     )
