@@ -3,9 +3,8 @@ numpy
 pygame~=2.4.0
 pandas
 pillow
-notebook
 seaborn
-paho-mqtt
+paho-mqtt~=1.6.1
 matplotlib
 scikit-learn
 opencv-python~=4.5.4.60
