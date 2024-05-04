@@ -76,7 +76,8 @@ Process Optimization on Integration of the Kit.
 
    - Choose and Type 'build' to create and activate a new conda-environment named cvpro. Once after execution, the guide for installation of python libraries will be displayed.
 
-   - Choose and Type 'activate' only if you have already built the cvpro environment and installed all the required python libraries in it. This will activate the conda environment (cvpro) and gives the guide for launching the MQTT Server and Data Collection Process/Training Process.
+   - Choose and Type 'activate' only if you have already built the cvpro environment and installed all the required python libraries in it. That is, the second time when you are integrating or erecting the kit.
+  This will activate the conda environment (cvpro) and gives the guide for launching the MQTT Server and Data Collection Process/Training Process.
 
    - Choose and Type 'deactivate' only if you have already built the cvpro environment and also when required. This will deactivate the active environment and bring it to (base).
  
