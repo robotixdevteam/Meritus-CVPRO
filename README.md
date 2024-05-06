@@ -40,11 +40,11 @@ Windows:
 - Open the Meritus-CVPRO-Windows (Extracted) and open the path in Windows-Command-Prompt, by typing ‘cmd’ in the Address Bar or Breadcrumb Bar. Or, Press ‘Win + R’ which opens the "Run" dialog, then type ‘cmd’ and press ‘Enter’. Now execute the command as follows:
 - cd Meritus-CVPRO-Windows
 - Execute the command ‘cvpro’. This is your main or Working-Terminal.
-- Follow the instructions as per the execution.
-- Create and Activate the Environment.
-- Installation of Dependencies
-- Launch the Server
-- ‘Run’ or ‘Train’ the Bot. 
+- Follow the instructions as per the execution:
+  - Create and Activate the Environment.
+  - Installation of Dependencies
+  - Launch the Server
+  - ‘Run’ or ‘Train’ the Bot. 
  
 #### Step 2: Conda Environment Setup: 
 
@@ -84,7 +84,6 @@ Windows:
 - Prompt for Batch Size required for the Training Process. The preset value will be automatically entered if you directly press ‘Enter’ without giving any input value.
 - Prompt for Epoch Value required for the Training Process. The preset value will be automatically entered if you directly press ‘Enter’ without giving any input value.
 - Prompt for Learning Rate required for the Training Process. The preset value will be automatically entered if you directly press ‘Enter’ without giving any input value.
-- Prompt for ‘User Password’ required for the permanently deleting the garbage files, that are not required for the Training Process.
 - Please make a note that, the terminal clears or refreshes the session, while executing the ‘train_cvpro’. 
  
 
