@@ -21,7 +21,6 @@ Process Optimization on Integration of the Kit.
 - We recommend to create a conda environment for CVPRO. Instructions on installing conda can be found [here](https://docs.conda.io/projects/conda/en/latest/user-guide/install/).  
 - The easiest way to create a new environment with all dependencies is to use one of the provided environment files.  
 - Download and Install the Ecllipse-Mosquitto in the User Profile Path. 
-- Install the Mqtt in your local system.
   
 ### Here, are the step-by-step instructions for downloading mosquitto MQTT Broker: 
  #### For Ubuntu-OS, open your terminal and run the following commands: 
@@ -44,11 +43,11 @@ Linux:
 - Right Click the extracted Folder and select ‘Open in Terminal’. This will open a new Terminal with folder path. - Or, Open a new Terminal, and type
 - cd Meritus-CVPRO-Linux 
 - Execute the command ‘source cvpro.sh’ or ‘. cvpro.sh’. This is your main or Working-Terminal. 
-- Follow the instructions as per the execution. 
-- Create and Activate the Environment. 
-- Installation of Dependencies 
-- Launch the Server 
-- ‘Run’ or ‘Train’ the Bot. 
+- Follow the instructions as per the execution:
+  - Create and Activate the Environment. 
+  - Installation of Dependencies 
+  - Launch the Server 
+  - ‘Run’ or ‘Train’ the Bot. 
  
 #### Step 2: Conda Environment Setup: 
  - Type ‘my_conda’, and press ‘Enter’. This will prompt you for further options – ‘build’, ‘activate’ or ‘deactivate’. 
