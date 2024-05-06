@@ -22,7 +22,7 @@ Process Optimization on Integration of the Kit.
 - The easiest way to create a new environment with all dependencies is to use one of the provided environment files.   
  
 - Download and Install the Ecllipse-Mosquitto in C:\Program Files. 
-- Install the Mqtt in your local system.
+
 ### Here, are the step-by-step instructions for downloading mosquitto MQTT Broker: 
 - Click [here](https://mosquitto.org/files/binary/win64/mosquitto-2.0.15-install-windows-x64.exe) for Windows 64-bit OS and [here](https://mosquitto.org/files/binary/win32/mosquitto-2.0.15-install-windows-x86.exe) for Windows 32-bit OS. (Note: Download the version that corresponds to your Windows build). 
  
