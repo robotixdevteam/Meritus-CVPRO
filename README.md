@@ -41,8 +41,7 @@ Process Optimization on Integration of the Kit.
 #### Step 1: Execute ‘cvpro’ 
 
 Linux: 
-- Right Click the extracted Folder and select ‘Open in Terminal’. This will open a new Terminal with folder path. Or, 
-- Open a new Terminal, and type
+- Right Click the extracted Folder and select ‘Open in Terminal’. This will open a new Terminal with folder path. - Or, Open a new Terminal, and type
 - cd Meritus-CVPRO-Linux 
 - Execute the command ‘source cvpro.sh’ or ‘. cvpro.sh’. This is your main or Working-Terminal. 
 - Follow the instructions as per the execution. 
