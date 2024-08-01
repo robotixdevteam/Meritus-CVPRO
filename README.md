@@ -14,7 +14,7 @@
   
 ### Downloading and Installation of Sources: 
 #### Download and install the Miniconda in the User Profile Path. 
-- We recommend to create a conda environment for CVPRO. Instructions on installing conda can be found [here](https://docs.conda.io/projects/conda/en/latest/user-guide/install/).  
+- We recommend to create a conda environment for CVPRO. Instructions on installing conda can be found [here](https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe).  
 - The easiest way to create a new environment with all dependencies is to use one of the provided environment files.
    
 #### Download and Install the Ecllipse-Mosquitto in C:\Program Files.
