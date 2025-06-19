@@ -70,7 +70,7 @@ CVPRO bridges computer vision and robotics through:
 - Deploy new models with one command  
 
 ## 🔧 Troubleshooting & Connections
-For detailed troubleshooting, connection diagrams, and advanced configuration, refer to our [Complete Technical Documentation](https://example.com/cvpro-docs).
+For detailed troubleshooting, connection diagrams, and advanced configuration, refer to our [Complete Technical Documentation](https://github.com/robotixdevteam/Meritus-CVPRO/tree/main/docs).
 
 ## 💡 Key Advantages
 ✔ **No Coding Required** - Guided terminal interface handles complex workflows  
