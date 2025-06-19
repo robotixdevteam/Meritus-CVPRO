@@ -1,6 +1,6 @@
 # CV Pro
 <p align="center" width="80%">
-    <img width="40%" src="./Images/cvpro.png" />
+    <img width="40%" src="./Images/cv_pro.png" />
 </p>
 
 CV Pro is a cutting-edge development and education platform with smart computer vision technology. This utilizes the extensive sensor suites, powerful computational abilites and state-of-the-art communication channels. They enable users to learn the intricacies of AI techonlogies such as Machine Learning, Deep Learning, which are utilized in real-time Autonomous Vehicles.
